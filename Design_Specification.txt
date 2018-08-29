@@ -1,0 +1,54 @@
+    Software Engineering Project -1 
+										            
+    COMP 10050
+												      
+    Assignment - 3 : OTHELLO REVERSI GAME IMPLEMENTATION
+													  
+    Design Specification Document
+													   
+
+    Name of Student 1 : Surabhi Agarwal  Student Number    : 17203535
+	
+    Name of Student 2 : Lorand Neculae  Student Number    : 17720105
+	
+	Design specification:
+	
+	We have been working on implementing the project Othello Reversi game by using  new concepts like linked lists, file handling, dynamic memory allocation, structs and enums. We used the following functions with the follwoing explainations:
+
+	1. ManageTurns function(Computes the moves) :: possibleMoves.c : to compute and print where players can move:
+	   We passes the two players as parameters and predicted the possible moves by first scanning the board for the disks in the centre then scanning adjiacent positions for the first player , after which we checked for the second player hence forming the required sequence; then we finally find a none space.
+	   
+	   We implemented stacks as a linked list to store the possible possitions for the player. 
+	   
+	   So, when we find the possible positions, we insert them in the linked list, print the list and free the location.
+	   
+	2. Managing turns :: main.c
+	   We are making use of a counter called play1 which is played everytime it is even for player one and on odd times the second player plays the turn. 
+	   To achieve this, we increment the counter, each time the player plays.
+	   
+	3. Playing turns function :: PlayTurns.c : to flip the disks while making a move
+	   
+	   After asking the player where to move, we implement playTurns function which is used for flipping the disks. We first assign the chosen position as the passed player and then we scan the board for the opponent. After getting the opponent we again check if sequence is the desired sequence i.e opponent terminated by player's disk, we find the opponent and flip the disk.
+	   
+	4. checkMoves :: checkMoves.c : To check terminating condition
+	
+	   In order to play again; check; if the valid moves function returns true or false; hence we manage the termination.
+	
+	
+	5. Get Score :: get the winning playe's score and print the results into a text file 
+	   
+	   We printed the results into a text file called OthelloReversiScore.txt and checked who won by accessing the struct for the players points.
+	  
+	  
+	
+	Dividing the work:
+	
+         We have collaboratively managed to complete the task. 
+         
+	Accounts used:
+	
+	Surabhi Agarwal : Surabhi98, Surabhi_Agarwal
+	Lorand Neculae : Lorand_Neculae
+	
+	
+	
